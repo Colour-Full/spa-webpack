@@ -1,11 +1,11 @@
 {
   "name": "spa-webpack",
-  "version": "1.0.0",
+  "version": "1.5.0",
   "description": "Webpack Configuration Generator",
-  "main": "webpack.shared.config.js",
+  "main": "webpack.exports.js",
   "scripts": {
     "precompile": "mkdir -p ./dist",
-    "compile": "npx babel ./dist/webpack/ --out-dir ./ && npx babel ./dist/copy.js --out-file ./bin/copy.js",
+    "compile": "npx babel ./dist/copy.js --out-file ./bin/copy.js",
     "test": "test"
   },
   "bin": {
@@ -21,17 +21,16 @@
     "eslint-loader": "^2.0.0",
     "file-loader": "^1.1.6",
     "flow-babel-webpack-plugin": "^1.1.1",
-    "flow-bin": "^0.64.0",
-    "flow-typed": "^2.3.0",
+    "html-webpack-harddisk-plugin": "^0.2.0",
     "html-webpack-plugin": "^3.0.4",
     "react": "^16.2.0",
     "react-hot-loader": "^4.0.0",
+    "uglifyjs-webpack-plugin": "^1.2.5",
     "webpack": "4.0.1",
     "webpack-cli": "^2.0.10"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.2",
     "babel-plugin-project-relative-require": "^2.0.3",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",

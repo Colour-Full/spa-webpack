@@ -6,7 +6,8 @@ import path from 'path'
 copy({
   files: {
     'webpack.dev.js': path.join(__dirname, '..', 'webpack.dev.js'),
-    'webpack.prod.js': path.join(__dirname, '..', 'webpack.prod.js')
+    'webpack.prod.js': path.join(__dirname, '..', 'webpack.prod.js'),
+    'webpack.shared.config.js': path.join(__dirname, '..', 'webpack.shared.config.js')
   },
   dest: path.resolve('./'),
   override: true

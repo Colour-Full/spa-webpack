@@ -14,7 +14,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 (0, _copyFiles2.default)({
   files: {
     'webpack.dev.js': _path2.default.join(__dirname, '..', 'webpack.dev.js'),
-    'webpack.prod.js': _path2.default.join(__dirname, '..', 'webpack.prod.js')
+    'webpack.prod.js': _path2.default.join(__dirname, '..', 'webpack.prod.js'),
+    'webpack.shared.config.js': _path2.default.join(__dirname, '..', 'webpack.shared.config.js')
   },
   dest: _path2.default.resolve('./'),
   override: true
